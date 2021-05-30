@@ -1,0 +1,36 @@
+{
+  "name": "mqtt-serial-connector",
+  "version": "0.0.1",
+  "description": "Serial to MQTT bridge with Homeassistant discovery support",
+  "main": "index.js",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "mqtt": "^4.2.6",
+    "serialport": "^9.0.8",
+    "validator": "^13.6.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "jest": "^27.0.1"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lsibilla/mqtt-serial-connector.git"
+  },
+  "keywords": [
+    "mqtt",
+    "serial",
+    "homeassistant",
+    "mqtt-bridge"
+  ],
+  "author": "Laurent Sibilla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lsibilla/mqtt-serial-connector/issues"
+  },
+  "homepage": "https://github.com/lsibilla/mqtt-serial-connector#readme"
+}

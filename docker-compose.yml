@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  mqtt-serial-connector:
+    build: .
+    volumes:
+      - "./config.yml:/app/config.yml"
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+      
