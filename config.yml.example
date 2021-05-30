@@ -1,0 +1,23 @@
+mqtt:
+  url: mqtts://mqtt-broker.local
+  #url: mqtt://mqtt-broker.local
+  #url: mqtt://192.168.1.123
+  discoveryTopic: homeassistant
+  deviceTopic: serial
+
+serial:
+  port: /dev/ttyUSB0
+
+devices:
+  - name: Device 1
+    id: serial_dev_1
+    type: switch
+    serial:
+      onValue: "dev1:1"
+      offValue: "dev1:0"
+  - name: Device 2
+    id: serial_dev_2
+    type: switch
+    serial:
+      onValue: "dev2:1"
+      offValue: "dev2:0"
